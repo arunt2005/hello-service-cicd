@@ -9,6 +9,11 @@ import java.time.format.DateTimeFormatter;
 public class HelloService {
 
     public String getService() {
+        String msg = "hello service. welcome. - " + LocalDateTime.now().format(DateTimeFormatter
+                .ofPattern("dd-MMMM-yyyy, hh:mm:ss:SSS a"));
+
+        System.out.println("<<<<<   " + msg + "   >>>>>");
+
         return "hello service. welcome. - " + LocalDateTime.now().format(DateTimeFormatter
                 .ofPattern("dd-MMMM-yyyy, hh:mm:ss:SSS a"));
     }
