@@ -20,5 +20,11 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Build & Test with Gradle
-        run: ./gradlew clean test
+      - name: Build & Test
+        run: ./gradlew clean build
+
+      - name: Upload JAR Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: spring-boot-jar
+          path: build/libs/*.jar
