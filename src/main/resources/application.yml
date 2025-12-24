@@ -2,5 +2,3 @@ spring:
     application:
         name: hello-service
 
-server:
-    port: 1000

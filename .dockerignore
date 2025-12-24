@@ -1,0 +1,6 @@
+.gradle
+out
+target
+.git
+.gitignore
+README.md
