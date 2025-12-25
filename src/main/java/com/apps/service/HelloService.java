@@ -20,8 +20,7 @@ public class HelloService {
 
         System.out.println("<<<<<   " + helloDao.getData() + "   >>>>>");
 
-        return "hello service. welcome. - " + LocalDateTime.now().format(DateTimeFormatter
-                .ofPattern("dd-MMMM-yyyy, hh:mm:ss:SSS a"));
+        return msg;
     }
 
 }
