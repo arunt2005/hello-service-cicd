@@ -32,8 +32,8 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t aruntmca/hello-service:latest .
-          docker tag aruntmca/hello-service:latest aruntmca/hello-service:v1.0
-          docker push aruntmca/hello-service:latest
-          docker push aruntmca/hello-service:v1.0
+          docker build -t aruntmca/welcome-service:latest .
+          docker tag aruntmca/welcome-service:latest aruntmca/welcome-service:v1.0
+          docker push aruntmca/welcome-service:latest
+          docker push aruntmca/welcome-service:v1.0
       
